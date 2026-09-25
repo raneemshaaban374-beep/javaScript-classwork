@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My student page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1 id="mainTitle">My Student Page</h1> 
+ <p id="message">I am learning JavaScript</p>  
+ <p id="pageStutus">Waiting for the load</p>
+ <button id="hellobutton">Say Hello</button>
+ <button id="namebutton">Enter My Name</button>
+ <button id="messagebutton">Change my message</button>
+ <div id="hoverBox" style="background-color: lightgray; padding: 25px; width: 250px;">Move your mouse here</div>
+ <ul>
+    <li>Reading</li>
+    <li>Music</li>
+    <li>Coding</li>
+ </ul>
+ <script>
+    document.getElementById("hellobutton").addEventListener("click",function(){
+        alert("Welcome to my page");
+    })
+    document.getElementById("namebutton").onclick=function(){
+        let name=prompt("What is your name?")
+        if(name){
+            document.getElementById("mainTitle").textContent="Welcome "+" "+name+" !"
+        }
+    }
+    document.getElementById("messagebutton").onclick=function(){
+        document.getElementById("message").textContent="I can make my webpage interactive! ";
+    };
+    document.getElementById("hoverBox").onmouseover=function(){
+        document.getElementById("hoverBox").style.backgroundColor="orange";
+        document.getElementById("hoverBox").textContent="YOU FOUND ME !!"
+    }
+     document.getElementById("hoverBox").onmouseout=function(){
+        document.getElementById("hoverBox").style.backgroundColor="lightgray";
+        document.getElementById("hoverBox").textContent="Move your mouse here"
+     }
+     window.onload=function(){
+        document.getElementById("pageStatus").textContent="The page is ready!";
+     }
+ </script>
+</body>
+</html>

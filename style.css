@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    background-color: bisque;
+}
+h1{
+    color: rgb(228, 76, 101);
+    
+}
+button{
+    padding: 8px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+#hoverBox{
+    margin-top: 15px;
+    padding: 25px;
+    border-radius: 8px;
+}
+ul{
+    margin-top: 20px;
+}
